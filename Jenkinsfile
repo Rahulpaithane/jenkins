@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        PASS = credentials('registry-pass')
+        PASS = credentials('dockerHubPass')
     }
     stages {
         stage('Build') {
